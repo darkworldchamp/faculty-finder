@@ -1,26 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <FacultyList />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FacultyList from './components/FacultyList.vue';
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    FacultyList
   }
-}
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+/* Optional: Custom background color styling */
+.bg-blue-100 {
+  background-color: #ebf8ff; /* Light blue background */
+}
+body, html {
+  margin: 0;
+  padding: 0;
 }
 </style>
